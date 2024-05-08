@@ -68,7 +68,7 @@ def printitems(board):
     items.draw(screen) #draw all items
 
 play_bg_music() #plays infinitely
-pygame.time.wait(200) #pause for title screen
+pygame.time.wait(20000) #pause for title screen
 
 #start game
 board = [1, 3, 5, 7] #starting board
@@ -116,7 +116,7 @@ while (True):
 
                 screen.blit(p_wait, p_wait.get_rect()) #set background for PC turn
                 pygame.display.flip()
-                pygame.time.wait(5000) #waiting for PC turn
+                pygame.time.wait(3000) #waiting for PC turn
                 
                 temp_board = nim_driver.computerMove(board) #update to new state
                 board = temp_board[:]
